@@ -16,6 +16,7 @@ public class UserRegistrationController
 	@ResponseBody
 	public UserRegisterResponse registerUser(@RequestBody UserRegisterRequest userRegistration) 
 	{
+		System.out,println("inside registerUser()");
 		UserRegisterResponse response = new UserRegisterResponse();
 		response.setAge(userRegistration.getAge());
 		response.setFullName(userRegistration.getFullName());
